@@ -1,0 +1,120 @@
+html, body {
+    height:100%;
+}
+
+h1, p {
+    color: gainsboro;
+    text-align: center;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+#root{
+    height: 100%;
+}
+
+#pageGrideContainer {
+    /*this will be our top level container
+    * it will contain our navigation bar, photoContainer, and RoutingContainer
+    */
+    display: grid;
+    grid-template-columns: [col-first] 20% [col-second] auto [col-end];
+    grid-template-rows: [row1-start] 50% [row2-start] 50% [row-end];
+    height: 100%;
+}
+
+
+#NavigationGridItem{
+    /*
+    * our left side navigation bar that routes routingContainer
+     */
+    grid-column-start: col-first;
+    grid-column-end: col-second;
+    grid-row-start: row1-start;
+    grid-row-end: row-end;
+    /*background-color: #fffff9;*/
+    background-color: black;
+    padding-top: 13em;
+    border-color: gainsboro;
+    border-style: solid;
+
+}
+
+#RoutingContainer{
+    /*
+    *  this is the bottom container that changes content based of the navigation
+     */
+    grid-column-start: col-second;
+    grid-column-end: col-end;
+    grid-row-start: row2-start;
+    grid-row-end: row-end;
+    /*background-color: #fffff9*/
+    background-color: black;
+    border-style: solid;
+    border-color: gainsboro;
+
+
+
+}
+
+
+
+#PhotoContainer{
+    /*
+    *  this is the top container above Routing container that will have a photo of me
+     */
+
+    grid-column-start: col-second;
+    grid-column-end: col-end;
+    grid-row-start: row1-start;
+    grid-row-end: row2-start;
+    /*background-color: #fffff9;*/
+    background-color: black;
+    border-style: solid;
+    border-color: gainsboro;
+
+
+}
+
+
+.contentButtons{
+    display: block;
+    border: none;
+    /*background-color: #fffff9;*/
+    background-color: black;
+    margin-bottom: 5em;
+    cursor: pointer;
+    margin-left: 40%;
+    font-size: 20px;
+    color: white;
+
+}
+
+/*formating buttons for space*/
+@media screen and (max-width: 600px) {
+
+    .contentButtons{
+        margin-left: 0%;
+        font-size: 12px;
+    }
+
+}
+
+/*formating buttons for space*/
+@media screen and (min-width: 610px) and (max-width: 840px) {
+
+    /*645px to 840px*/
+    .contentButtons{
+        margin-left: 25%;
+    }
+}
+
+
