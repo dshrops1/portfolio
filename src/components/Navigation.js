@@ -12,19 +12,29 @@ const Navigator = () => {
         //nav bar vertical left sid
         <nav id="NavigationGridItem">
 
-            {/*current code is just to test css layout*/}
             <section>
-                {/*section with our navigation buttons*/}
 
-                {/*these buttons will be for our full screen size*/}
-                <Link to='/'> <input className="contentButtons" type='button' value="About"/></Link>
-                <Link to="/projects"> <input className="contentButtons" type="button" value="Projects"/></Link>
-                <input className="contentButtons" type="button" value="GitHub"/>
-                <input className="contentButtons" type="button" value="LinkedIn"/>
+                <Link to='/'>
+                    <div className='button-container-1'>
+                        <input className="contentButtons" type='button'  value="About"/>
+                    </div>
+                </Link>
 
-                {/*after a certain cut off generally the longest word we will
-                  *then change to a smaller image representing the same thing
-                  */}
+                <Link to="/projects">
+                    <div className="button-container-1">
+                        <input className="contentButtons" type="button" value="Projects"/>
+                    </div>
+                </Link>
+
+                <div className="button-container-1">
+                     <input className="contentButtons" type="button" value="GitHub"/>
+                </div>
+
+                <div className="button-container-1">
+                     <input className="contentButtons" type="button" value="LinkedIn"/>
+                </div>
+
+
 
             </section>
 
