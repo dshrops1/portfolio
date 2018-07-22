@@ -6,7 +6,7 @@ a {
   text-decoration: none;
 }
 
-h1, p {
+h1, h3, p {
   color: gainsboro;
   text-align: center;
 }

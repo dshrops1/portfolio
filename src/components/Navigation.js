@@ -27,11 +27,11 @@ const Navigator = () => {
                 </Link>
 
                 <div className="button-container-1">
-                     <input className="contentButtons" type="button" value="GitHub"/>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/dshrops1"><input className="contentButtons" type="button" value="GitHub"/></a>
                 </div>
 
                 <div className="button-container-1">
-                     <input className="contentButtons" type="button" value="LinkedIn"/>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dustinshropshire"><input className="contentButtons" type="button" value="LinkedIn"/></a>
                 </div>
 
 
