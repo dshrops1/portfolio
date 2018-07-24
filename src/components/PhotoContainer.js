@@ -8,7 +8,8 @@ const PhotoContainer =() => {
     return(
         <section id="PhotoContainer">
 
-            <img src="https://s3.amazonaws.com/gainzngames-photo-bucket/dustin.jpeg" alt="no" />
+            {/*<img src="https://s3.amazonaws.com/gainzngames-photo-bucket/dustin.jpeg" alt="src/assets/dustin.jpeg" />*/}
+
 
         </section>
     )

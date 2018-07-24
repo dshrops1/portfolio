@@ -6,13 +6,13 @@ a {
   text-decoration: none;
 }
 
-h1, h3, p {
+h1, h3, h4, p {
   color: gainsboro;
   text-align: center;
 }
 
 img {
-  max-height: 100%;
+  max-height: 65%;
   max-width: 100%;
   display: block;
   margin-left: auto;
@@ -60,6 +60,7 @@ img {
   background-color: black;
   border-style: solid;
   border-color: gainsboro;
+  overflow-y: scroll;
 }
 
 #PhotoContainer {
@@ -74,6 +75,11 @@ img {
   background-color: black;
   border-style: solid;
   border-color: gainsboro;
+  background-image: url("https://s3.amazonaws.com/gainzngames-photo-bucket/dustin.jpeg");
+  background-size: 45em;
+  background-repeat: no-repeat;
+  background-position: center top;
+
 }
 
 .contentButtons {
@@ -102,6 +108,15 @@ img {
     margin-left: 25%;
   }
 }
+
+@media screen and (max-width: 350px){
+
+    .contentButtons{
+        font-size: 8px
+    }
+}
+
+
 .button-container-1 {
   transition: 0.5s;
 }

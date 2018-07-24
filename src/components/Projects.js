@@ -16,9 +16,7 @@ render () {
     return (
 
         <Fragment>
-            <h1>
-        Hello , World
-            </h1>
+            <a href="http://ec2-54-237-162-118.compute-1.amazonaws.com"> <iframe title="TwitchBot" src="http://ec2-54-237-162-118.compute-1.amazonaws.com">Update your browser bub</iframe></a>
         </Fragment>
     )
 }
