@@ -5,19 +5,57 @@
  */
 
 
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
+import express from "../security/sec"
+
+
+
 
 export default class extends Component {
 
     state = {
+        "projects": [],
+        "have": false
+}
+
+async componentDidMount(){
+       let projects = await fetch(express.express, {mode: "cors"})
+           .then((res) =>res.json())
+
+
+        this.setState({
+            "projects": projects,
+            "have": true
+        })
+
+    // this.setState({
+    //     "projects": projects.map(projects => <a href={projects.link}><iframe title={projects.description} src={projects.link}>{projects.description}</iframe></a>)
+    // })
+
+
 }
 
 render () {
     return (
 
-        <Fragment>
-            <a href="http://ec2-54-237-162-118.compute-1.amazonaws.com"> <iframe title="TwitchBot" src="http://ec2-54-237-162-118.compute-1.amazonaws.com">Update your browser bub</iframe></a>
-        </Fragment>
+        <div id="project-flex">
+
+
+            {
+                this.state.have && this.state.projects.map((projects)=>{
+
+                    return(
+                        <div key={projects.id} className="projects">
+                            <a href={projects.link}><iframe title={projects.description} src={projects.link}>{projects.description}</iframe></a>
+                            <p>{projects.description}</p>
+                        </div>
+                    )
+                })
+
+            }
+
+
+        </div>
     )
 }
 

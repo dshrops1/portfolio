@@ -23,6 +23,10 @@ img {
   height: 100%;
 }
 
+#project-flex{
+    /*will be parent flex container*/
+}
+
 #pageGrideContainer {
   /*this will be our top level container
   * it will contain our navigation bar, photoContainer, and RoutingContainer
