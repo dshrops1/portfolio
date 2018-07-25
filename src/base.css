@@ -25,6 +25,9 @@ img {
 
 #project-flex{
     /*will be parent flex container*/
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #pageGrideContainer {
@@ -113,12 +116,15 @@ img {
   }
 }
 
+
+
 @media screen and (max-width: 350px){
 
     .contentButtons{
         font-size: 8px
     }
 }
+
 
 
 .button-container-1 {
@@ -141,17 +147,6 @@ img {
   animation: ani 0.7s steps(22) forwards;
 }
 
-/*.mas {*/
-  /*position: absolute;*/
-  /*color: #000;*/
-  /*text-align: center;*/
-  /*width: 101%;*/
-  /*font-weight: 300;*/
-  /*position: absolute;*/
-  /*font-size: 20px;*/
-  /*margin-top: 12px;*/
-  /*overflow: hidden;*/
-/*}*/
 
 @-webkit-keyframes ani {
   from {
@@ -194,4 +189,4 @@ img {
   }
 }
 
-/*# sourceMappingURL=base.css.map */
+

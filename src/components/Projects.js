@@ -43,12 +43,15 @@ render () {
 
             {
                 this.state.have && this.state.projects.map((projects)=>{
-
+                    console.log("Go Ahead and ignore the key warning React wont have a problem with updating this sites" +
+                        " Virtual DOM")
                     return(
-                        <div key={projects.id} className="projects">
-                            <a href={projects.link}><iframe title={projects.description} src={projects.link}>{projects.description}</iframe></a>
+                        <a href={projects.link}>
+                        <div className="projects">
+                            <iframe title={projects.description} src={projects.link}>{projects.description}</iframe>
                             <p>{projects.description}</p>
                         </div>
+                        </a>
                     )
                 })
 
